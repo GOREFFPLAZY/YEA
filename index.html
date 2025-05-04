@@ -60,6 +60,7 @@
              border: 1px solid #666;
              border-radius: 5px;
              font-size: 16px;
+
              background-color: #444;
              color: #fff;
          }
@@ -185,7 +186,7 @@
          #dataButtons button {
              padding: 10px 15px;
              border: none;
-             background-color: #4CAF50;
+             background-color: #001aff;
              color: white;
              cursor: pointer;
              border-radius: 5px;
@@ -194,7 +195,7 @@
          }
  
          #dataButtons button:hover {
-             background-color: #367C39;
+             background-color: #ff0000;
          }
  
          #dataButtons input[type="file"] {
@@ -210,11 +211,11 @@
  
          #sortOptions {
              padding: 10px;
-             border: 1px solid #666;
+             border: 1px solid #00d9ff;
              border-radius: 5px;
              font-size: 16px;
              appearance: none;
-             background-color: white;
+             background-color: #00d9ff;
              background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23343a40" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
              background-repeat: no-repeat;
              background-position: right .75rem center;
@@ -222,7 +223,7 @@
          }
  
          #sortOptions:focus {
-             border-color: #80bdff;
+             border-color: #007bff;
              outline: 0;
              box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
          }
@@ -233,7 +234,7 @@
              right: 20px;
              padding: 10px 15px;
              border: none;
-             background-color: #007bff;
+             background-color: #001aff;
              color: white;
              cursor: pointer;
              border-radius: 5px;
@@ -249,7 +250,7 @@
          #settings-button {
              position: fixed;
              border: none;
-             background-color: #007bff;
+             background-color: #001aff;
              color: white;
              cursor: pointer;
              border-radius: 5px;
@@ -441,7 +442,7 @@
          </div>
          <select id="sortOptions" onchange="sortZones()">
              <option value="name">by Nameㅤ</option>
-             <option value="id">by Idㅤ</option>
+             <option value="id">by date (newest at bottom)ㅤ</option>
              <option value="popular">by Popularityㅤ</option>
          </select>
      </div>
