@@ -253,7 +253,7 @@ settings.addEventListener('click', () => {
 function showContact() {
     document.getElementById('popupTitle').textContent = "Contact";
     const popupBody = document.getElementById('popupBody');
-    popupBody.innerHTML = `<p>Discord: https://discord.gg/NAFw4ykZ7n</p>`;
+    popupBody.innerHTML = `<p>Discord: https://discord.gg/fAgr5FRE</p>`;
     popupBody.contentEditable = false;
     document.getElementById('popupOverlay').style.display = "flex";
 }
