@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        window.addEventListener('beforeunload', function (event) {
+            event.preventDefault();
+            event.returnValue = '';
+            return 'Are you sure you want to leave? Any unsaved changes will be lost.';
+        });
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5521219086088837" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WX5VS54ZDW"></script>
+    <meta name="google-adsense-account" content="ca-pub-5521219086088837">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-WX5VS54ZDW');
+    </script>
+    <script async src="https://fundingchoicesmessages.google.com/i/pub-5521219086088837?ers=1"></script><script>(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+    <ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5521219086088837"
+     data-ad-slot="5549138288"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+    <script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <script src='https://cdn.jsdelivr.net/gh/gn-math/gn-math.github.io@main/gnmath.js'></script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gn-math</title>
+    <meta name="title" content="GN-Math">
+    <meta name="description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gn-math.github.io/">
+    <meta property="og:title" content="GN-Math">
+    <meta property="og:description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gn-math.github.io/">
+    <meta name="twitter:title" content="GN-Math">
+    <meta name="twitter:description" content="Play unbl*cked games like Crazy Cattle 3D and DriveMad on GN-Math. Fast, free, no downloads—perfect for school or home.">
+    <meta name="keywords" content="unblocked games, games for school, browser games, chromebook games, no download games, html5 games, free unblocked games, gn-math, fun games at school, crazy cattle 3d, play crazy cattle 3d, crazy cattle 3d unblocked, crazy cattle, crazy cattle unblocked, play crazy cattle, crazy cattle online, crazy cattle 3d online">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+    <h1>gn-math</h1>
+    <input type="text" id="searchBar" placeholder="Search zones..." onkeyup="filterZones()">
+    <div id="topControls">
+        <div id="dataButtons">
+            <button onclick="saveData()">Save Data</button>
+            <button onclick="document.getElementById('file').click()">Load Data</button>
+            <input type="file" id="file" style="display:none" onchange="loadData(event)" />
+        </div>
+        <select id="sortOptions" onchange="sortZones()">
+            <option value="name">by Nameㅤ</option>
+            <option value="id">by Id (Date)ㅤ</option>
+            <option value="popular">by Popularityㅤ</option>
+        </select>
+    </div>
+    <div class="zone-wrapper">
+        <div id="zoneCount" class="zone-count"></div>
+        <div id="container">Loading...</div>
+    </div>
+    <div id="zoneViewer">
+        <div id="zoneInfo">
+            <div id="zoneTitle">
+                <span id="zoneName"></span> <a id="zoneAuthor"></a> <span id="zoneId"></span>
+            </div>
+            <div id="controls">
+                <button onclick="downloadZone()" id="download" class="green-button">Download Local</button>
+                <button onclick="closeZone()">Close</button>
+                <button onclick="fullscreenZone()">Fullscreen</button>
+                <button onclick="aboutBlank()">about:blank (use if embed is broken)</button>
+            </div>
+        </div>
+        <iframe id="zoneFrame"></iframe>
+    </div>
+    <button id="settings">Settings</button>
+    <div id="footerButtons">
+        <button onclick="showContact()">Contact</button>
+        <button onclick="loadPrivacy()">Privacy Policy</button>
+    </div>
+    <div id="popupOverlay">
+        <div id="popupContent">
+            <div id="popupHeader">
+                <span id="popupTitle"></span>
+                <button onclick="closePopup()">Close</button>
+            </div>
+            <div id="popupBody" contenteditable="false"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
