@@ -213,7 +213,7 @@ function cloakIcon(url) {
 }
 function cloakName(string) {
     if ((string+"").trim().length === 0) {
-        document.title = "gn-math";
+        document.title = "Magma";
         return;
     }
     document.title = string;
